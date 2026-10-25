@@ -266,7 +266,7 @@ If print started (after heating phase) then the status is 1.
 ### Get Camera image
 
 ```bash
-./query_file.sh -q camera.json -i MY_PRINTER_IP -p 8002 ./query_file.sh | jq -r ".responses[0].cameraPreviewData" | base64 -d > out.jpeg
+./query_file.sh -q camera.json -i MY_PRINTER_IP -p 8002 | jq -r ".responses[0].cameraPreviewData" | base64 -d > out.jpeg
 ```
 
 ## Sending Files
